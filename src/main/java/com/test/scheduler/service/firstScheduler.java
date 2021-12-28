@@ -8,9 +8,8 @@ import org.springframework.stereotype.Component;
 @Slf4j
 public class firstScheduler {
 
-    //    @Scheduled(cron = "0 6 * * * *") // Test each minute
-//    @Scheduled(cron = "0 * * * * ?") // Test each minute
-    @Scheduled(fixedDelay = 5000) // Tech each 5 seconds
+    @Scheduled(cron = "0 * * * * ?") // Test each minute
+//    @Scheduled(fixedDelay = 5000) // Tech each 5 seconds
     public void firstScheduler() throws InterruptedException {
         log.info("First scheduler MAIN");
         for (int i = 0; i < 10; i++) {
