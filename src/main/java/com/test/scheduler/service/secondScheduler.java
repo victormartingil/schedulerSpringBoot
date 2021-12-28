@@ -14,7 +14,7 @@ public class secondScheduler {
         log.info("Second scheduler MAIN");
         for (int i = 0; i < 10; i++) {
             Thread.sleep(1000);
-            log.info("Second scheduler inside for " + i+1);
+            log.info("Second scheduler inside for " + (i+1));
         }
     }
 }

@@ -15,7 +15,7 @@ public class firstScheduler {
         log.info("First scheduler MAIN");
         for (int i = 0; i < 10; i++) {
             Thread.sleep(1000);
-            log.info("First scheduler inside for " + i+1);
+            log.info("First scheduler inside for " + (i+1));
         }
     }
 }
